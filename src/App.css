@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Raleway", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper {
+  max-width: 1200px;
+  width: 55%;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #f3f0f0;
+  position: relative;
+  padding-top: 1.4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.card-img-container {
+  position: absolute;
+  top: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-img-container img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #eeeeee;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #5a5252;
+  font-size: 1.5rem;
+}
+
+.card-details {
+  margin-left: 16rem;
+  position: relative;
+}
+
+.card-mini-details {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.card-mini-details p {
+  line-height: 25px;
+}
+
+.list-of-scores {
+  display: block;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.score {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 1.5rem 0.7rem 0.7rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #eeeeee;
+  font-size: 1.3rem;
+  color: #706c6c;
+}
+
+.search-box::placeholder {
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+}
+
+.open-close {
+  position: absolute;
+  top: 1rem;
+  right: 0;
 }
